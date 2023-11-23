@@ -105,5 +105,9 @@ public class CentroBotanico {
     public List<Botanico> getBotanicos() {
         return botanicos;
     }
+
+    public List<Planta> getPlantas() {
+        return plantas;
+    }
     
 }
