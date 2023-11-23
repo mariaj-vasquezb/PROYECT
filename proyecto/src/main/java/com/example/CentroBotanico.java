@@ -21,7 +21,7 @@ public class CentroBotanico {
     public void agregarBotanico(Botanico botanico) {
         botanicos.add(botanico);
     }
-
+//este método se encarga de programar un cuidado para un área específica, en una fecha y hora determinadas, con la participación de ciertas plantas y botánicos. Este cuidado programado se registra en la lista de cuidados del centro botánico.
     public void programarCuidado(String area, String fechaHora, List<Planta> plantas, List<Botanico> botanicos) {
         Cuidado cuidado = new Cuidado(area, fechaHora, plantas, botanicos);
         cuidados.add(cuidado);
@@ -100,6 +100,10 @@ public class CentroBotanico {
         System.out.println("Total realizados: " + totalRealizados);
         System.out.println("Total pendientes: " + totalPendientes);
         System.out.println("Total aplazados: " + totalAplazados);
+    }
+
+    public List<Botanico> getBotanicos() {
+        return botanicos;
     }
     
 }
